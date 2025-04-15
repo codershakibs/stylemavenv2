@@ -369,6 +369,9 @@ footer .footer-wrapper .footer-links .footer-links-heading {
 .about-winter {
   padding: 100px 0;
 }
+.about-winter .about-winter-heading {
+  width: 905px;
+}
 
 .about-last-section {
   padding: 100px 0;
