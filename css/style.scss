@@ -68,7 +68,7 @@ img {
     color: #353535;
 }
 
-.secondary-color {
+.c {
     color: #000;
 }
 
@@ -149,6 +149,10 @@ img {
     font-size: 25px;
 }
 
+.fs-40 {
+    font-size: 40px;
+}
+
 .fs-50 {
     font-size: 50px;
 }
@@ -203,19 +207,33 @@ img {
     line-height: 113.333%;
 }
 
-// buttons
+.lh-143 {
+    line-height: 143.438%;
+}
 
+// buttons
 .btn-outline {
-    padding: 18px 43px;
-    border: 1px solid --secondary-color;
-    background-color: transparent;
-    color: var(--secondary-color);
-    font-family: "Yantramanav", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 121.429%;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
+    padding: 18px 43px 18px 43px;
+    border: 1px solid #000;
+    display: inline-flex;
+    transition: all 0.5s ease-in-out;
+
+    a {
+        transition: all 0.5s ease-in-out;
+
+    }
+
+    &:hover {
+        background-color: #000;
+        color: #FFF;
+        cursor: pointer;
+
+        a {
+            color: #FFF;
+        }
+    }
+
+
 }
 
 // tags 
@@ -343,4 +361,169 @@ header {
             }
         }
     }
+}
+
+// winter section end
+
+// bestseller start 
+.bestseller {
+    padding: 100px 0;
+}
+
+// bestseller end
+
+// ring item 
+.ring-item {
+    padding: 100px 0;
+
+}
+
+// ring end
+
+// home grid start 
+.home-grid {
+    padding: 100px 0;
+
+    .home-grid-items {
+        .home-grid-img {
+            position: relative;
+
+            h2 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
+// home grid end
+
+// cta section 
+.cta-section {
+    padding: 100px 0;
+
+    .cta-wrapper {
+        .cta-top-block {
+            .cta-email {
+                .cta-input {
+                    border-bottom: 1px solid #949287 !important;
+                    width: 627px;
+                    padding-bottom: 30px;
+                    background-color: transparent;
+
+                    &::placeholder {
+                        color: 808080;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// cta section end
+
+footer {
+    padding: 100px 0;
+    background-color: #000;
+
+    .footer-wrapper {
+        .footer-links {
+            .footer-links-heading {
+                letter-spacing: 4.5px;
+            }
+        }
+    }
+}
+
+// ***about page ***
+
+// about banner 
+.about-banner {
+    padding: 200px 0;
+    background-image: url(../assets/about-banner-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+// about winter 
+.about-winter {
+    padding: 100px 0;
+}
+
+// about last section 
+.about-last-section {
+    padding: 100px 0;
+}
+
+// about last end
+
+// shop page 
+.shop-section {
+    padding: 100px 0;
+
+    .shop-left-block {
+        .tags {
+            .shop-tag-capsule {
+                padding: 12px 24px;
+                background-color: transparent;
+                border: 1px solid #000;
+            }
+        }
+    }
+}
+
+// product details 
+.color-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.color-swatch.selected {
+    border-color: #ccc;
+}
+
+.size-option input[type="radio"] {
+    display: none;
+}
+
+.size-option label {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+
+.size-option input[type="radio"]:checked+label {
+    background-color: #000;
+    color: #fff;
+}
+
+.thumbnail img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.quantity-control {
+    width: 120px;
+}
+
+.quantity-control .form-control {
+    pointer-events: none;
+}
+
+.tab-pane ul {
+    padding-left: 1.2rem;
 }
